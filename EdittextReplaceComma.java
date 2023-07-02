@@ -13,7 +13,7 @@ userTxt.setOnKeyListener((view, i, keyEvent) -> {
 
                         int SelectionPoint = ((EditText) view).getSelectionStart() - 1;
                         StringBuilder txt = new StringBuilder();
-                        for (int j = 0; j < yeniHali.toCharArray().length; j++) {
+                        for (int j = 0; j < yeniHali.length(); j++) {
                             if (j == SelectionPoint) {
                                 txt.append(",");
                             } else if (yeniHali.charAt(j) != ',') {
